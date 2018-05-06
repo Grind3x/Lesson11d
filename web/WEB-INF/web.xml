@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- addGroup servlet -->
+    <servlet>
+        <servlet-name>addgroup</servlet-name>
+        <servlet-class>app.servlets.AddGroupServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addgroup</servlet-name>
+        <url-pattern>/addgroup</url-pattern>
+    </servlet-mapping>
+
+    <!-- listStudents servlet -->
+    <servlet>
+        <servlet-name>listgroups</servlet-name>
+        <servlet-class>app.servlets.ListGroupServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>listgroups</servlet-name>
+        <url-pattern>/listgroups</url-pattern>
+    </servlet-mapping>
+
+    <!-- addGroup student servlet -->
+    <servlet>
+        <servlet-name>addstudent</servlet-name>
+        <servlet-class>app.servlets.AddStudentServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addstudent</servlet-name>
+        <url-pattern>/addstudent</url-pattern>
+    </servlet-mapping>
+
+    <!-- listStudentInGroup servlet -->
+    <servlet>
+        <servlet-name>viewgroup</servlet-name>
+        <servlet-class>app.servlets.ViewGroupServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>viewgroup</servlet-name>
+        <url-pattern>/viewgroup</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- addStudentToGro servlet -->
+    <servlet>
+        <servlet-name>addstudenttogroup</servlet-name>
+        <servlet-class>app.servlets.AddStudentToGroupServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addstudenttogroup</servlet-name>
+        <url-pattern>/addstudenttogroup</url-pattern>
+    </servlet-mapping>
+
+</web-app>
