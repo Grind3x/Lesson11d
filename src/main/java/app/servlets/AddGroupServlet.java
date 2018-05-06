@@ -22,7 +22,6 @@ public class AddGroupServlet extends HttpServlet {
         Group group = new Group(name);
         GroupModel model = GroupModel.getInstance();
         model.addGroup(group);
-        System.out.println(group + " added");
         req.setAttribute("groupName", name);
         doGet(req, resp);
     }

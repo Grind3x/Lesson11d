@@ -26,7 +26,6 @@ public class AddStudentServlet extends HttpServlet {
         Student student = new Student(firstname, secondname, course);
         StudentModel model = StudentModel.getInstance();
         model.addStudent(student);
-        System.out.println(student + " added");
         req.setAttribute("firstname", firstname);
         req.setAttribute("secondname", secondname);
         doGet(req, resp);
